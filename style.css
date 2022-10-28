@@ -1,37 +1,41 @@
 body {
-    background-size: cover;
+    background-color: rgb(106, 255, 0);
 }
 
-.heading {
-    font-size: 25px;
-    width: 100%;
-    margin: 0px;
-    padding: 10px;
+h1 {
+    background-color: bisque;
+    color: blue;
 }
 
-.note {
-    width: 100%;
-    font-size: 17px;
-    padding: 0px;
-    height: 32px;
+#mySketch {
+    font-size: 30px;
 }
 
-#start,
-#number_of_objects,
-#status {
+#confidence {
+    font-size: 30px;
+}
+
+#topic {
+    color: red;
     font-size: 20px;
 }
 
-.copy_right_footer {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    line-height: 2;
-    background-color: coral;
-    text-align: center;
-    font-size: 25px;
-    font-weight: 500;
-    font-family: 'Dancing Script', cursive;
+#score {
+    font-size: 30px;
 }
 
-canvas {}
+#timer {
+    font-size: 30px;
+    margin-right: 500px;
+}
+
+canvas {
+    border: 5px solid white;
+    border-radius: 20px;
+    margin-top: 150px;
+    box-shadow: 5px 5px 5px grey;
+    box-shadow: 1px 1px 38px #ffffff;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
