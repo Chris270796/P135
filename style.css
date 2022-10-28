@@ -1,0 +1,37 @@
+body {
+    background-size: cover;
+}
+
+.heading {
+    font-size: 25px;
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
+}
+
+.note {
+    width: 100%;
+    font-size: 17px;
+    padding: 0px;
+    height: 32px;
+}
+
+#start,
+#number_of_objects,
+#status {
+    font-size: 20px;
+}
+
+.copy_right_footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    line-height: 2;
+    background-color: coral;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Dancing Script', cursive;
+}
+
+canvas {}
