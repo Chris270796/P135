@@ -1,41 +1,46 @@
 body {
-    background-color: rgb(106, 255, 0);
+    background-size: cover;
 }
 
-h1 {
-    background-color: bisque;
-    color: blue;
+.heading {
+    font-size: 25px;
+    width: 100%;
+    margin: 0px;
+    padding: 10px;
 }
 
-#mySketch {
-    font-size: 30px;
+.note {
+    width: 100%;
+    font-size: 17px;
+    padding: 0px;
+    height: 32px;
 }
 
-#confidence {
-    font-size: 30px;
-}
-
-#topic {
-    color: red;
+#start,
+#number_of_objects,
+#status {
     font-size: 20px;
 }
 
-#score {
-    font-size: 30px;
-}
-
-#timer {
-    font-size: 30px;
-    margin-right: 500px;
+.copy_right_footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    line-height: 2;
+    background-color: coral;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 500;
+    font-family: 'Dancing Script', cursive;
 }
 
 canvas {
-    border: 5px solid white;
-    border-radius: 20px;
-    margin-top: 150px;
-    box-shadow: 5px 5px 5px grey;
-    box-shadow: 1px 1px 38px #ffffff;
-    animation-name: example;
-    animation-duration: 4s;
-    animation-iteration-count: infinite;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin-top: 110px;
+    box-shadow: 5px 5px 5px white;
+}
+
+.input {
+    border-radius: 40px;
 }
