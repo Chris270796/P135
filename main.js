@@ -14,11 +14,6 @@ function start() {
     objectDetector = ml5.objectDetector("cocosd", modelLoaded);
     document.getElementById("status").innerHTML = "Status : Detecting Objects";
     target = document.getElementById("input").value;
-    if (target == objects[i].label) {
-        video.stop();
-        document.getElementById("status").innerHTML = target + "Found"
-    }
-
 }
 
 
@@ -32,6 +27,7 @@ function modelLoaded() {
 
 function draw() {
     image(video, 0, 0, 500, 400);
+    objects
     if (status != "") {
         for (i = 0; i < objects.length; i++) {
             fill("#FF0000");
@@ -40,7 +36,16 @@ function draw() {
             noFill();
             stroke("#FF0000");
             rect(objects[i].x, objects[i].y, objects[i].width, objects[i].height);
-
+            if (objects[i].label == target) {
+                video.stop();
+                objectDetector.detect(gotResults);
+                document.getElementById("status").innerHTML = target + " Found";
+                synth = window.speechSynthesis;
+                utterThis = new SpeechSynthesisUtterance(target + " Found");
+                synth.speak(utterThis);
+            } else {
+                document.getElementById("status").innerHTML = target + " Not Found";
+            }
         }
     }
 }
